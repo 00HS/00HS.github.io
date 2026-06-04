@@ -35,9 +35,9 @@ a:hover {
 
 .page {
   display: grid;
-  grid-template-columns: 280px minmax(0, 820px);
-  gap: 48px;
-  max-width: 1180px;
+  grid-template-columns: 220px minmax(0, 860px);
+  gap: 36px;
+  max-width: 1120px;
   margin: 0 auto;
   padding: 36px 28px 80px;
 }
@@ -49,41 +49,43 @@ a:hover {
   background: var(--sidebar-bg);
   border: 1px solid var(--border);
   border-radius: 12px;
-  padding: 24px;
+  padding: 18px;
   text-align: center;
 }
 
 .profile-img {
-  width: 180px;
-  height: 180px;
+  width: 130px;
+  height: 130px;
   object-fit: cover;
   border-radius: 8px;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 
 .sidebar h1 {
-  font-size: 24px;
-  margin: 0 0 8px;
+  font-size: 21px;
+  margin: 0 0 6px;
   font-weight: 700;
 }
 
 .affiliation {
-  margin: 0 0 12px;
+  margin: 0 0 8px;
   color: var(--muted);
+  font-size: 14px;
 }
 
 .tagline {
-  font-size: 14px;
+  font-size: 13px;
   color: var(--muted);
-  margin: 12px 0 18px;
+  margin: 10px 0 14px;
 }
 
 .links {
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  font-size: 14px;
+  gap: 4px;
+  font-size: 13px;
 }
+
 
 .content {
   min-width: 0;
