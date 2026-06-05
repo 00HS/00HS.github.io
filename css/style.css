@@ -118,6 +118,10 @@ li {
   margin-bottom: 10px;
 }
 
+.news-list li:nth-child(n+6) {
+  display: none;
+}
+
 .pub-list {
   list-style: disc;
   padding-left: 20px;
