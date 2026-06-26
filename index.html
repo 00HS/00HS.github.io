@@ -9,231 +9,266 @@
 </head>
 
 <body>
-  <header class="hero">
-    <div class="hero-inner">
-      <p class="eyebrow">Reliable ML/NLP · Alignment · Retrieval</p>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a class="site-title" href="#">Hyunseo Shin</a>
 
-      <h1>Hyunseo Shin</h1>
-
-      <p class="affiliation">University of Seoul</p>
-
-      <p class="hero-description">
-        I am interested in building reliable language models and retrieval systems
-        under realistic and challenging settings, with a focus on LLM alignment,
-        safety, and retrieval-augmented reasoning.
-      </p>
-
-      <div class="hero-links">
-        <a href="mailto:hseo98@naver.com">Email</a>
-        <a href="https://github.com/00HS" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <nav class="site-nav">
+        <a href="#about">About</a>
+        <a href="#news">News</a>
+        <a href="#publications">Publications</a>
         <a href="assets/cv.pdf">CV</a>
-      </div>
+      </nav>
     </div>
   </header>
 
-  <nav class="navbar">
-    <a href="#about">About</a>
-    <a href="#news">News</a>
-    <a href="#publications">Publications</a>
-    <a href="#education">Education</a>
-    <a href="#work">Experience</a>
-    <a href="#honors">Honors</a>
-    <a href="#certificates">Certificates</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <main class="container">
+    <section id="about" class="intro">
+      <div class="intro-text">
+        <h1>Hyunseo Shin</h1>
 
-  <main class="content">
-    <section id="about">
-      <h2>About Me</h2>
+        <p>
+          Hello! I received my M.S. degree in Artificial Intelligence from the
+          University of Seoul, advised by Prof. Wonseok Hwang.
+        </p>
 
-      <p>
-        My name is Hyunseo Shin. I received my M.S. degree in Artificial
-        Intelligence from the University of Seoul under the guidance of
-        Professor Wonseok Hwang.
-      </p>
+        <p>
+          I am interested in understanding and improving the reliability of
+          large language models and retrieval systems. My research focuses on
+          LLM alignment, multilingual safety, reliable AI, and retrieval-augmented
+          reasoning under realistic and challenging settings.
+        </p>
 
-      <p>
-        My research interests include LLM alignment, reliable AI, and safety.
-        Recently, I have focused on understanding how model behavior can be made
-        more reliable under realistic and challenging settings.
-      </p>
+        <div class="social-links">
+          <a href="mailto:hseo98@naver.com">Email</a>
+          <a href="https://github.com/00HS" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="assets/cv.pdf">CV</a>
+        </div>
+      </div>
+
+      <div class="intro-image">
+        <img src="assets/profile.jpg" alt="Hyunseo Shin profile photo" />
+      </div>
     </section>
 
-    <section id="news">
+    <section id="news" class="section">
       <h2>News</h2>
 
-      <ul class="news-list">
-        <li><em>2026.06</em>: Two papers were accepted to ICML workshops.</li>
-        <li><em>2026.02</em>: Received an M.S. degree in Artificial Intelligence from the University of Seoul.</li>
-        <li><em>2026.02</em>: One paper was accepted to EACL Main.</li>
-        <li><em>2026.02</em>: One paper was accepted to IEEE Access.</li>
-        <li><em>2025.09</em>: Joined NAVER Place AI Platform as an MLE Intern.</li>
-      </ul>
+      <div class="news-item">
+        <span class="date">Jun 2026</span>
+        <span>Two papers were accepted to ICML workshops.</span>
+      </div>
+
+      <div class="news-item">
+        <span class="date">Feb 2026</span>
+        <span>Received an M.S. degree in Artificial Intelligence from the University of Seoul.</span>
+      </div>
+
+      <div class="news-item">
+        <span class="date">Feb 2026</span>
+        <span>One paper was accepted to EACL Main.</span>
+      </div>
+
+      <div class="news-item">
+        <span class="date">Feb 2026</span>
+        <span>One paper was accepted to IEEE Access.</span>
+      </div>
+
+      <div class="news-item">
+        <span class="date">Sep 2025</span>
+        <span>Joined NAVER Place AI Platform as an MLE Intern.</span>
+      </div>
     </section>
 
-    <section id="publications">
+    <section id="publications" class="section">
       <h2>Publications</h2>
 
-      <ul class="pub-list">
-        <li>
-          <span class="venue">ICML Workshop 2026</span>
-          <div class="paper-title">
+      <h3>2026</h3>
+
+      <article class="publication">
+        <div class="pub-thumb">
+          <img src="assets/papers/code_switching.png" alt="Code-switching ASR thumbnail" />
+        </div>
+
+        <div class="pub-info">
+          <div class="pub-tags">Multilingual ASR, Code-Switching</div>
+          <div class="pub-title">
             Towards Truly Multilingual ASR: Generalizing Code-Switching ASR to Unseen Language Pairs
           </div>
-          <div class="authors">
+          <div class="pub-authors">
             <strong>Hyunseo Shin*</strong>, Gio Paik*, Soungmin Lee
           </div>
-        </li>
+          <div class="pub-venue">
+            ICML Workshop, 2026
+          </div>
+        </div>
+      </article>
 
-        <li>
-          <span class="venue">EACL Main 2026</span>
-          <div class="paper-title">
+      <article class="publication">
+        <div class="pub-thumb">
+          <img src="assets/papers/layerwise_swapping.png" alt="Layer-wise swapping thumbnail" />
+        </div>
+
+        <div class="pub-info">
+          <div class="pub-tags">LLM Safety, Model Merging</div>
+          <div class="pub-title">
             Layer-wise Swapping for Generalizable Multilingual Safety
           </div>
-          <div class="authors">
+          <div class="pub-authors">
             <strong>Hyunseo Shin*</strong>, Wonseok Hwang
           </div>
-        </li>
+          <div class="pub-venue">
+            EACL Main, 2026
+          </div>
+        </div>
+      </article>
 
-        <li>
-          <span class="venue">IEEE Access 2026</span>
-          <div class="paper-title">
+      <article class="publication">
+        <div class="pub-thumb">
+          <img src="assets/papers/causal_retrieval.png" alt="Causal retrieval thumbnail" />
+        </div>
+
+        <div class="pub-info">
+          <div class="pub-tags">Retrieval, Causality</div>
+          <div class="pub-title">
             Causal Retrieval via Semantic Regularization
           </div>
-          <div class="authors">
+          <div class="pub-authors">
             <strong>Hyunseo Shin*</strong>, Youngrok Choi, Wonseok Hwang
           </div>
-        </li>
+          <div class="pub-venue">
+            IEEE Access, 2026
+          </div>
+        </div>
+      </article>
 
-        <li>
-          <span class="venue">IEEE ASE Workshop 2025</span>
-          <div class="paper-title">
+      <h3>2025</h3>
+
+      <article class="publication">
+        <div class="pub-thumb">
+          <img src="assets/papers/ksnac.png" alt="K-SNAC thumbnail" />
+        </div>
+
+        <div class="pub-info">
+          <div class="pub-tags">OOD Generalization, Test Adequacy</div>
+          <div class="pub-title">
             K-SNAC: Robust Neuron Coverage for OOD Generalization and Test Adequacy
           </div>
-          <div class="authors">
+          <div class="pub-authors">
             Seungwon Woo*, <strong>Hyunseo Shin*</strong>, Eunkyung Choi*, Juheon Kang*, Wonseok Hwang
           </div>
-        </li>
-
-        <li>
-          <span class="venue">NeurIPS Workshop 2024</span>
-          <div class="paper-title">
-            Causal Retrieval with Semantic Consideration
+          <div class="pub-venue">
+            IEEE ASE Workshop, 2025
           </div>
-          <div class="authors">
-            <strong>Hyunseo Shin*</strong>, Wonseok Hwang
-          </div>
-        </li>
+        </div>
+      </article>
 
-        <li>
-          <span class="venue">AAAI 2025</span>
-          <div class="paper-title">
+      <article class="publication">
+        <div class="pub-thumb">
+          <img src="assets/papers/openness.png" alt="AI openness thumbnail" />
+        </div>
+
+        <div class="pub-info">
+          <div class="pub-tags">AI Safety, Openness</div>
+          <div class="pub-title">
             On the Consideration of AI Openness: Can Good Intent Be Abused?
           </div>
-          <div class="authors">
+          <div class="pub-authors">
             Yeeun Kim*, <strong>Hyunseo Shin</strong>, Eunkyung Choi, Hongseok Oh, Hyunjun Kim, Wonseok Hwang
           </div>
-        </li>
-      </ul>
+          <div class="pub-venue">
+            AAAI, 2025
+          </div>
+        </div>
+      </article>
+
+      <h3>2024</h3>
+
+      <article class="publication">
+        <div class="pub-thumb">
+          <img src="assets/papers/causal_retrieval_workshop.png" alt="Causal retrieval workshop thumbnail" />
+        </div>
+
+        <div class="pub-info">
+          <div class="pub-tags">RAG, Retrieval</div>
+          <div class="pub-title">
+            Causal Retrieval with Semantic Consideration
+          </div>
+          <div class="pub-authors">
+            <strong>Hyunseo Shin*</strong>, Wonseok Hwang
+          </div>
+          <div class="pub-venue">
+            NeurIPS Workshop, 2024
+          </div>
+        </div>
+      </article>
     </section>
 
-    <section id="education">
+    <section id="education" class="section">
       <h2>Education</h2>
 
-      <ul class="timeline-list">
-        <li>
-          <div class="item-main">
-            <strong>University of Seoul</strong>
-            <span>M.S. in Artificial Intelligence</span>
-          </div>
-          <em>2024.03 - 2026.02</em>
-        </li>
+      <div class="plain-item">
+        <strong>University of Seoul</strong>, M.S. in Artificial Intelligence
+        <span>2024.03 - 2026.02</span>
+      </div>
 
-        <li>
-          <div class="item-main">
-            <strong>University of Seoul</strong>
-            <span>B.S. in Environmental Engineering, Minor in Statistics</span>
-          </div>
-          <em>2020.03 - 2024.02</em>
-        </li>
-      </ul>
+      <div class="plain-item">
+        <strong>University of Seoul</strong>, B.S. in Environmental Engineering, Minor in Statistics
+        <span>2020.03 - 2024.02</span>
+      </div>
     </section>
 
-    <section id="work">
+    <section id="experience" class="section">
       <h2>Work Experience</h2>
 
-      <ul class="timeline-list">
-        <li>
-          <div class="item-main">
-            <strong>NAVER Place AI Platform</strong>
-            <span>MLE Intern</span>
-          </div>
-          <em>2025.09 - 2025.10</em>
-          <p>
-            Developed a place-domain-specific embedder and constructed retrieval
-            train/test datasets.
-          </p>
-        </li>
-      </ul>
+      <div class="plain-item">
+        <strong>NAVER Place AI Platform</strong>, MLE Intern
+        <span>2025.09 - 2025.10</span>
+        <p>
+          Developed a place-domain-specific embedder and constructed retrieval
+          train/test datasets.
+        </p>
+      </div>
     </section>
 
-    <section id="honors">
+    <section id="honors" class="section">
       <h2>Honors and Awards</h2>
 
-      <ul class="timeline-list">
-        <li>
-          <div class="item-main">
-            <strong>Outstanding Award</strong>
-            <span>Graduate Student Research Competency Program, University of Seoul</span>
-          </div>
-          <em>2026.01</em>
-        </li>
+      <div class="plain-item">
+        <strong>Outstanding Award</strong>, Graduate Student Research Competency Program, University of Seoul
+        <span>2026.01</span>
+      </div>
 
-        <li>
-          <div class="item-main">
-            <strong>Outstanding Award</strong>
-            <span>Academic Deepening and Social Problem Solving Research Project, University of Seoul</span>
-          </div>
-          <em>2024.12</em>
-        </li>
-      </ul>
+      <div class="plain-item">
+        <strong>Outstanding Award</strong>, Academic Deepening and Social Problem Solving Research Project, University of Seoul
+        <span>2024.12</span>
+      </div>
     </section>
 
-    <section id="certificates">
+    <section id="certificates" class="section">
       <h2>Certificates</h2>
 
-      <ul class="timeline-list">
-        <li>
-          <div class="item-main">
-            <strong>Big Data Analysis Engineer</strong>
-          </div>
-          <em>2023.07.14</em>
-        </li>
+      <div class="plain-item">
+        <strong>Big Data Analysis Engineer</strong>
+        <span>2023.07.14</span>
+      </div>
 
-        <li>
-          <div class="item-main">
-            <strong>SQLD</strong>
-          </div>
-          <em>2022.09.30</em>
-        </li>
+      <div class="plain-item">
+        <strong>SQLD</strong>
+        <span>2022.09.30</span>
+      </div>
 
-        <li>
-          <div class="item-main">
-            <strong>ADsP</strong>
-          </div>
-          <em>2022.09.23</em>
-        </li>
-      </ul>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-
-      <p>
-        Email:
-        <a href="mailto:hseo98@naver.com">hseo98@naver.com</a>
-      </p>
+      <div class="plain-item">
+        <strong>ADsP</strong>
+        <span>2022.09.23</span>
+      </div>
     </section>
   </main>
+
+  <footer class="footer">
+    <div class="container">
+      © 2026 Hyunseo Shin.
+    </div>
+  </footer>
 </body>
 </html>
