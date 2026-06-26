@@ -2,10 +2,11 @@
   --text: #222222;
   --muted: #666666;
   --light: #888888;
-  --border: #eeeeee;
+  --border: #dddddd;
+  --border-light: #eeeeee;
   --link: #1772d0;
   --bg: #ffffff;
-  --max-width: 920px;
+  --max-width: 900px;
 }
 
 * {
@@ -29,7 +30,7 @@ body {
     Arial,
     sans-serif;
   font-size: 16px;
-  line-height: 1.72;
+  line-height: 1.75;
 }
 
 a {
@@ -44,7 +45,7 @@ a:hover {
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 0 32px;
+  padding: 0 34px;
 }
 
 /* Header */
@@ -54,7 +55,7 @@ a:hover {
   top: 0;
   z-index: 100;
   background: rgba(255, 255, 255, 0.96);
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--border-light);
   backdrop-filter: blur(8px);
 }
 
@@ -94,7 +95,7 @@ a:hover {
 /* Intro */
 
 .intro {
-  padding: 92px 0 74px;
+  padding: 86px 0 76px;
 }
 
 .intro-text {
@@ -103,8 +104,8 @@ a:hover {
 
 .intro h1 {
   margin: 0 0 18px;
-  font-size: 46px;
-  line-height: 1.1;
+  font-size: 44px;
+  line-height: 1.12;
   font-weight: 500;
   letter-spacing: -0.035em;
 }
@@ -130,16 +131,22 @@ a:hover {
   font-size: 15.5px;
 }
 
-/* Sections */
+/* Section layout */
 
 .section {
-  padding: 58px 0;
-  border-top: 1px solid var(--border);
+  padding: 64px 0 66px;
   scroll-margin-top: 86px;
 }
 
+.section + .section {
+  border-top: 1px solid var(--border-light);
+}
+
 .section h2 {
-  margin: 0 0 32px;
+  margin: 0 0 34px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #222222;
+  color: var(--text);
   font-size: 28px;
   line-height: 1.25;
   font-weight: 500;
@@ -147,28 +154,28 @@ a:hover {
 }
 
 .section h3 {
-  margin: 0 0 22px;
+  margin: 0 0 24px;
   color: #333333;
-  font-size: 21px;
+  font-size: 22px;
   line-height: 1.3;
   font-weight: 500;
 }
 
 .section h3:not(:first-child) {
-  margin-top: 46px;
+  margin-top: 52px;
 }
 
 /* News */
 
 .news-list {
   display: grid;
-  gap: 13px;
+  gap: 14px;
 }
 
 .news-item {
   display: grid;
-  grid-template-columns: 110px minmax(0, 1fr);
-  gap: 24px;
+  grid-template-columns: 120px minmax(0, 1fr);
+  gap: 26px;
 }
 
 .news-item .date {
@@ -176,10 +183,10 @@ a:hover {
   white-space: nowrap;
 }
 
-/* Publications */
+/* Publications without images */
 
 .year-block {
-  margin-bottom: 44px;
+  margin-bottom: 52px;
 }
 
 .year-block:last-child {
@@ -187,17 +194,19 @@ a:hover {
 }
 
 .publication {
-  margin-bottom: 30px;
-  padding-left: 18px;
-  border-left: 2px solid #e6e6e6;
+  margin-bottom: 34px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--border-light);
 }
 
 .publication:last-child {
   margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
 }
 
 .paper-title {
-  margin: 0 0 6px;
+  margin: 0 0 7px;
   color: var(--text);
   font-size: 17px;
   line-height: 1.55;
@@ -205,7 +214,7 @@ a:hover {
 }
 
 .paper-authors {
-  margin: 0 0 4px;
+  margin: 0 0 5px;
   color: #444444;
   font-size: 15.5px;
   line-height: 1.55;
@@ -222,9 +231,9 @@ a:hover {
 
 .item {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 150px;
-  gap: 32px;
-  margin-bottom: 28px;
+  grid-template-columns: minmax(0, 1fr) 155px;
+  gap: 36px;
+  margin-bottom: 32px;
 }
 
 .item:last-child {
@@ -236,7 +245,7 @@ a:hover {
 }
 
 .item p {
-  margin: 3px 0 0;
+  margin: 4px 0 0;
   color: #444444;
 }
 
@@ -250,14 +259,14 @@ a:hover {
 /* Contact */
 
 #contact {
-  padding-bottom: 72px;
+  padding-bottom: 82px;
 }
 
 /* Footer */
 
 .footer {
-  padding: 32px 0;
-  border-top: 1px solid var(--border);
+  padding: 34px 0;
+  border-top: 1px solid var(--border-light);
   color: var(--muted);
   font-size: 14px;
 }
@@ -266,7 +275,7 @@ a:hover {
 
 @media (max-width: 760px) {
   .container {
-    padding: 0 22px;
+    padding: 0 24px;
   }
 
   .header-inner {
@@ -283,7 +292,7 @@ a:hover {
   }
 
   .intro {
-    padding: 58px 0 52px;
+    padding: 58px 0 54px;
   }
 
   .intro h1 {
@@ -291,16 +300,16 @@ a:hover {
   }
 
   .subtitle {
-    font-size: 16px;
     margin-bottom: 26px;
+    font-size: 16px;
   }
 
   .section {
-    padding: 44px 0;
+    padding: 50px 0 52px;
   }
 
   .section h2 {
-    margin-bottom: 24px;
+    margin-bottom: 26px;
     font-size: 25px;
   }
 
@@ -316,9 +325,5 @@ a:hover {
 
   .item span {
     text-align: left;
-  }
-
-  .publication {
-    padding-left: 14px;
   }
 }
