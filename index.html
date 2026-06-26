@@ -10,13 +10,17 @@
 
 <body>
   <header class="site-header">
-    <div class="container nav-container">
+    <div class="container header-inner">
       <a class="site-title" href="#">Hyunseo Shin</a>
 
       <nav class="site-nav">
         <a href="#about">About</a>
         <a href="#news">News</a>
         <a href="#publications">Publications</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#honors">Honors</a>
+        <a href="#certificates">Certificates</a>
         <a href="assets/cv.pdf">CV</a>
       </nav>
     </div>
@@ -27,193 +31,160 @@
       <div class="intro-text">
         <h1>Hyunseo Shin</h1>
 
-        <p>
-          Hello! I received my M.S. degree in Artificial Intelligence from the
-          University of Seoul, advised by Prof. Wonseok Hwang.
+        <p class="subtitle">
+          Reliable ML/NLP Systems · LLM Safety · Alignment · Retrieval
         </p>
 
         <p>
-          I am interested in understanding and improving the reliability of
-          large language models and retrieval systems. My research focuses on
-          LLM alignment, multilingual safety, reliable AI, and retrieval-augmented
-          reasoning under realistic and challenging settings.
+          I received my M.S. degree in Artificial Intelligence from the
+          University of Seoul, advised by Professor Wonseok Hwang.
         </p>
 
-        <div class="social-links">
+        <p>
+          My research interests include LLM alignment, reliable AI, multilingual
+          safety, and retrieval-augmented reasoning. Recently, I have focused on
+          understanding how model behavior can be made more reliable under
+          realistic and challenging settings.
+        </p>
+
+        <div class="profile-links">
           <a href="mailto:hseo98@naver.com">Email</a>
           <a href="https://github.com/00HS" target="_blank" rel="noopener noreferrer">GitHub</a>
           <a href="assets/cv.pdf">CV</a>
         </div>
-      </div>
-
-      <div class="intro-image">
-        <img src="assets/profile.jpg" alt="Hyunseo Shin profile photo" />
       </div>
     </section>
 
     <section id="news" class="section">
       <h2>News</h2>
 
-      <div class="news-item">
-        <span class="date">Jun 2026</span>
-        <span>Two papers were accepted to ICML workshops.</span>
-      </div>
+      <div class="news-list">
+        <div class="news-item">
+          <span class="date">2026.06</span>
+          <span>Our code-switching ASR work was accepted to the ICML Workshop on Machine Learning for Audio.</span>
+        </div>
 
-      <div class="news-item">
-        <span class="date">Feb 2026</span>
-        <span>Received an M.S. degree in Artificial Intelligence from the University of Seoul.</span>
-      </div>
+        <div class="news-item">
+          <span class="date">2026.02</span>
+          <span>Our paper <em>Layer-wise Swapping for Generalizable Multilingual Safety</em> was accepted to EACL Main.</span>
+        </div>
 
-      <div class="news-item">
-        <span class="date">Feb 2026</span>
-        <span>One paper was accepted to EACL Main.</span>
-      </div>
+        <div class="news-item">
+          <span class="date">2026.02</span>
+          <span>Our paper <em>Causal Retrieval via Semantic Regularization</em> was accepted to IEEE Access.</span>
+        </div>
 
-      <div class="news-item">
-        <span class="date">Feb 2026</span>
-        <span>One paper was accepted to IEEE Access.</span>
-      </div>
-
-      <div class="news-item">
-        <span class="date">Sep 2025</span>
-        <span>Joined NAVER Place AI Platform as an MLE Intern.</span>
+        <div class="news-item">
+          <span class="date">2025.09</span>
+          <span>Joined NAVER Place AI Platform as an MLE Intern.</span>
+        </div>
       </div>
     </section>
 
     <section id="publications" class="section">
       <h2>Publications</h2>
 
-      <h3>2026</h3>
+      <div class="year-block">
+        <h3>2026</h3>
 
-      <article class="publication">
-        <div class="pub-thumb">
-          <img src="assets/papers/code_switching.png" alt="Code-switching ASR thumbnail" />
-        </div>
-
-        <div class="pub-info">
-          <div class="pub-tags">Multilingual ASR, Code-Switching</div>
-          <div class="pub-title">
+        <article class="publication">
+          <p class="paper-title">
             Towards Truly Multilingual ASR: Generalizing Code-Switching ASR to Unseen Language Pairs
-          </div>
-          <div class="pub-authors">
+          </p>
+          <p class="paper-authors">
             <strong>Hyunseo Shin*</strong>, Gio Paik*, Soungmin Lee
-          </div>
-          <div class="pub-venue">
-            ICML Workshop, 2026
-          </div>
-        </div>
-      </article>
+          </p>
+          <p class="paper-venue">
+            ICML Workshop on Machine Learning for Audio, 2026
+          </p>
+        </article>
 
-      <article class="publication">
-        <div class="pub-thumb">
-          <img src="assets/papers/layerwise_swapping.png" alt="Layer-wise swapping thumbnail" />
-        </div>
-
-        <div class="pub-info">
-          <div class="pub-tags">LLM Safety, Model Merging</div>
-          <div class="pub-title">
+        <article class="publication">
+          <p class="paper-title">
             Layer-wise Swapping for Generalizable Multilingual Safety
-          </div>
-          <div class="pub-authors">
+          </p>
+          <p class="paper-authors">
             <strong>Hyunseo Shin*</strong>, Wonseok Hwang
-          </div>
-          <div class="pub-venue">
+          </p>
+          <p class="paper-venue">
             EACL Main, 2026
-          </div>
-        </div>
-      </article>
+          </p>
+        </article>
 
-      <article class="publication">
-        <div class="pub-thumb">
-          <img src="assets/papers/causal_retrieval.png" alt="Causal retrieval thumbnail" />
-        </div>
-
-        <div class="pub-info">
-          <div class="pub-tags">Retrieval, Causality</div>
-          <div class="pub-title">
+        <article class="publication">
+          <p class="paper-title">
             Causal Retrieval via Semantic Regularization
-          </div>
-          <div class="pub-authors">
+          </p>
+          <p class="paper-authors">
             <strong>Hyunseo Shin*</strong>, Youngrok Choi, Wonseok Hwang
-          </div>
-          <div class="pub-venue">
+          </p>
+          <p class="paper-venue">
             IEEE Access, 2026
-          </div>
-        </div>
-      </article>
+          </p>
+        </article>
+      </div>
 
-      <h3>2025</h3>
+      <div class="year-block">
+        <h3>2025</h3>
 
-      <article class="publication">
-        <div class="pub-thumb">
-          <img src="assets/papers/ksnac.png" alt="K-SNAC thumbnail" />
-        </div>
-
-        <div class="pub-info">
-          <div class="pub-tags">OOD Generalization, Test Adequacy</div>
-          <div class="pub-title">
+        <article class="publication">
+          <p class="paper-title">
             K-SNAC: Robust Neuron Coverage for OOD Generalization and Test Adequacy
-          </div>
-          <div class="pub-authors">
+          </p>
+          <p class="paper-authors">
             Seungwon Woo*, <strong>Hyunseo Shin*</strong>, Eunkyung Choi*, Juheon Kang*, Wonseok Hwang
-          </div>
-          <div class="pub-venue">
+          </p>
+          <p class="paper-venue">
             IEEE ASE Workshop, 2025
-          </div>
-        </div>
-      </article>
+          </p>
+        </article>
 
-      <article class="publication">
-        <div class="pub-thumb">
-          <img src="assets/papers/openness.png" alt="AI openness thumbnail" />
-        </div>
-
-        <div class="pub-info">
-          <div class="pub-tags">AI Safety, Openness</div>
-          <div class="pub-title">
+        <article class="publication">
+          <p class="paper-title">
             On the Consideration of AI Openness: Can Good Intent Be Abused?
-          </div>
-          <div class="pub-authors">
+          </p>
+          <p class="paper-authors">
             Yeeun Kim*, <strong>Hyunseo Shin</strong>, Eunkyung Choi, Hongseok Oh, Hyunjun Kim, Wonseok Hwang
-          </div>
-          <div class="pub-venue">
+          </p>
+          <p class="paper-venue">
             AAAI, 2025
-          </div>
-        </div>
-      </article>
+          </p>
+        </article>
+      </div>
 
-      <h3>2024</h3>
+      <div class="year-block">
+        <h3>2024</h3>
 
-      <article class="publication">
-        <div class="pub-thumb">
-          <img src="assets/papers/causal_retrieval_workshop.png" alt="Causal retrieval workshop thumbnail" />
-        </div>
-
-        <div class="pub-info">
-          <div class="pub-tags">RAG, Retrieval</div>
-          <div class="pub-title">
+        <article class="publication">
+          <p class="paper-title">
             Causal Retrieval with Semantic Consideration
-          </div>
-          <div class="pub-authors">
+          </p>
+          <p class="paper-authors">
             <strong>Hyunseo Shin*</strong>, Wonseok Hwang
-          </div>
-          <div class="pub-venue">
+          </p>
+          <p class="paper-venue">
             NeurIPS Workshop, 2024
-          </div>
-        </div>
-      </article>
+          </p>
+        </article>
+      </div>
     </section>
 
     <section id="education" class="section">
       <h2>Education</h2>
 
-      <div class="plain-item">
-        <strong>University of Seoul</strong>, M.S. in Artificial Intelligence
+      <div class="item">
+        <div>
+          <strong>University of Seoul</strong>
+          <p>M.S. in Artificial Intelligence</p>
+        </div>
         <span>2024.03 - 2026.02</span>
       </div>
 
-      <div class="plain-item">
-        <strong>University of Seoul</strong>, B.S. in Environmental Engineering, Minor in Statistics
+      <div class="item">
+        <div>
+          <strong>University of Seoul</strong>
+          <p>B.S. in Environmental Engineering, Minor in Statistics</p>
+        </div>
         <span>2020.03 - 2024.02</span>
       </div>
     </section>
@@ -221,26 +192,35 @@
     <section id="experience" class="section">
       <h2>Work Experience</h2>
 
-      <div class="plain-item">
-        <strong>NAVER Place AI Platform</strong>, MLE Intern
+      <div class="item">
+        <div>
+          <strong>NAVER Place AI Platform</strong>
+          <p>MLE Intern</p>
+          <p>
+            Developed a place-domain-specific embedder and constructed retrieval
+            train/test datasets.
+          </p>
+        </div>
         <span>2025.09 - 2025.10</span>
-        <p>
-          Developed a place-domain-specific embedder and constructed retrieval
-          train/test datasets.
-        </p>
       </div>
     </section>
 
     <section id="honors" class="section">
       <h2>Honors and Awards</h2>
 
-      <div class="plain-item">
-        <strong>Outstanding Award</strong>, Graduate Student Research Competency Program, University of Seoul
+      <div class="item">
+        <div>
+          <strong>Outstanding Award</strong>
+          <p>Graduate Student Research Competency Program, University of Seoul</p>
+        </div>
         <span>2026.01</span>
       </div>
 
-      <div class="plain-item">
-        <strong>Outstanding Award</strong>, Academic Deepening and Social Problem Solving Research Project, University of Seoul
+      <div class="item">
+        <div>
+          <strong>Outstanding Award</strong>
+          <p>Academic Deepening and Social Problem Solving Research Project, University of Seoul</p>
+        </div>
         <span>2024.12</span>
       </div>
     </section>
@@ -248,20 +228,34 @@
     <section id="certificates" class="section">
       <h2>Certificates</h2>
 
-      <div class="plain-item">
-        <strong>Big Data Analysis Engineer</strong>
+      <div class="item">
+        <div>
+          <strong>Big Data Analysis Engineer</strong>
+        </div>
         <span>2023.07.14</span>
       </div>
 
-      <div class="plain-item">
-        <strong>SQLD</strong>
+      <div class="item">
+        <div>
+          <strong>SQLD</strong>
+        </div>
         <span>2022.09.30</span>
       </div>
 
-      <div class="plain-item">
-        <strong>ADsP</strong>
+      <div class="item">
+        <div>
+          <strong>ADsP</strong>
+        </div>
         <span>2022.09.23</span>
       </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+
+      <p>
+        Email: <a href="mailto:hseo98@naver.com">hseo98@naver.com</a>
+      </p>
     </section>
   </main>
 
