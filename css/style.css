@@ -30,7 +30,7 @@ body {
     Arial,
     sans-serif;
   font-size: 16px;
-  line-height: 1.75;
+  line-height: 1.72;
 }
 
 a {
@@ -95,7 +95,7 @@ a:hover {
 /* Intro */
 
 .intro {
-  padding: 86px 0 76px;
+  padding: 72px 0 56px;
 }
 
 .intro-text {
@@ -103,7 +103,7 @@ a:hover {
 }
 
 .intro h1 {
-  margin: 0 0 18px;
+  margin: 0 0 16px;
   font-size: 44px;
   line-height: 1.12;
   font-weight: 500;
@@ -111,20 +111,20 @@ a:hover {
 }
 
 .subtitle {
-  margin: 0 0 34px;
+  margin: 0 0 28px;
   color: var(--muted);
   font-size: 18px;
 }
 
 .intro p {
-  margin: 0 0 18px;
+  margin: 0 0 16px;
 }
 
 .profile-links {
   display: flex;
   flex-wrap: wrap;
   gap: 18px;
-  margin-top: 30px;
+  margin-top: 26px;
 }
 
 .profile-links a {
@@ -134,7 +134,7 @@ a:hover {
 /* Section layout */
 
 .section {
-  padding: 64px 0 66px;
+  padding: 46px 0 48px;
   scroll-margin-top: 86px;
 }
 
@@ -143,8 +143,8 @@ a:hover {
 }
 
 .section h2 {
-  margin: 0 0 34px;
-  padding-bottom: 10px;
+  margin: 0 0 24px;
+  padding-bottom: 8px;
   border-bottom: 3px solid #222222;
   color: var(--text);
   font-size: 28px;
@@ -154,7 +154,7 @@ a:hover {
 }
 
 .section h3 {
-  margin: 0 0 24px;
+  margin: 0 0 18px;
   color: #333333;
   font-size: 22px;
   line-height: 1.3;
@@ -162,20 +162,20 @@ a:hover {
 }
 
 .section h3:not(:first-child) {
-  margin-top: 52px;
+  margin-top: 36px;
 }
 
 /* News */
 
 .news-list {
   display: grid;
-  gap: 14px;
+  gap: 10px;
 }
 
 .news-item {
   display: grid;
-  grid-template-columns: 120px minmax(0, 1fr);
-  gap: 26px;
+  grid-template-columns: 115px minmax(0, 1fr);
+  gap: 22px;
 }
 
 .news-item .date {
@@ -186,7 +186,7 @@ a:hover {
 /* Publications without images */
 
 .year-block {
-  margin-bottom: 52px;
+  margin-bottom: 38px;
 }
 
 .year-block:last-child {
@@ -194,8 +194,8 @@ a:hover {
 }
 
 .publication {
-  margin-bottom: 34px;
-  padding-bottom: 30px;
+  margin-bottom: 24px;
+  padding-bottom: 22px;
   border-bottom: 1px solid var(--border-light);
 }
 
@@ -206,18 +206,18 @@ a:hover {
 }
 
 .paper-title {
-  margin: 0 0 7px;
+  margin: 0 0 4px;
   color: var(--text);
   font-size: 17px;
-  line-height: 1.55;
+  line-height: 1.5;
   font-weight: 600;
 }
 
 .paper-authors {
-  margin: 0 0 5px;
+  margin: 0 0 2px;
   color: #444444;
   font-size: 15.5px;
-  line-height: 1.55;
+  line-height: 1.5;
 }
 
 .paper-venue {
@@ -232,8 +232,8 @@ a:hover {
 .item {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 155px;
-  gap: 36px;
-  margin-bottom: 32px;
+  gap: 32px;
+  margin-bottom: 24px;
 }
 
 .item:last-child {
@@ -245,7 +245,7 @@ a:hover {
 }
 
 .item p {
-  margin: 4px 0 0;
+  margin: 3px 0 0;
   color: #444444;
 }
 
@@ -259,13 +259,13 @@ a:hover {
 /* Contact */
 
 #contact {
-  padding-bottom: 82px;
+  padding-bottom: 64px;
 }
 
 /* Footer */
 
 .footer {
-  padding: 34px 0;
+  padding: 30px 0;
   border-top: 1px solid var(--border-light);
   color: var(--muted);
   font-size: 14px;
@@ -292,7 +292,7 @@ a:hover {
   }
 
   .intro {
-    padding: 58px 0 54px;
+    padding: 54px 0 44px;
   }
 
   .intro h1 {
@@ -300,17 +300,25 @@ a:hover {
   }
 
   .subtitle {
-    margin-bottom: 26px;
+    margin-bottom: 24px;
     font-size: 16px;
   }
 
   .section {
-    padding: 50px 0 52px;
+    padding: 40px 0 42px;
   }
 
   .section h2 {
-    margin-bottom: 26px;
+    margin-bottom: 22px;
     font-size: 25px;
+  }
+
+  .section h3 {
+    margin-bottom: 16px;
+  }
+
+  .section h3:not(:first-child) {
+    margin-top: 30px;
   }
 
   .news-item {
@@ -325,5 +333,10 @@ a:hover {
 
   .item span {
     text-align: left;
+  }
+
+  .publication {
+    margin-bottom: 22px;
+    padding-bottom: 20px;
   }
 }
